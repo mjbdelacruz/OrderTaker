@@ -1,10 +1,8 @@
-CREATE DATABASE lalafood;
+DROP TABLE IF EXISTS `Orders`;
 
-use lalafood;
-
-CREATE TABLE Orders (
-	id BIGINT AUTO_INCREMENT,
-	distance double NOT NULL,
-	status varchar(50) NOT NULL,
+CREATE TABLE `Orders` (
+	`id` BIGINT AUTO_INCREMENT,
+	`distance` double NOT NULL,
+	`status` varchar(50) NOT NULL,
 	PRIMARY KEY(id)
-) engine = INNODB;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
